@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCÍDIO DE AVALIAÇÃO</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+
+        <a-assets>
+
+            <!-- Ambient -->
+
+            <!-- Obtido em: https://poly.google.com/view/2_fv3tn3NG_ -->
+            <a-asset-item id="tree" src="./assets/tree/forest.gltf"></a-asset-item>
+            <!-- Obtido em: https://poly.google.com/view/62bVOJt7vHv -->
+            <a-asset-item id="rock" src="./assets/rock/rock_02.gltf"></a-asset-item>
+            <!-- Obtido em: https://poly.google.com/view/0Fl55ZzsVzT -->
+            <a-asset-item id="mountain" src="./assets/mountain/Mountain_01.gltf"></a-asset-item>
+            <!-- Obtido em: https://poly.google.com/view/bpV3f5je3rl -->
+            <a-asset-item id="tree1" src="./assets/tree1/PineTree_440.gltf"></a-asset-item>
+            <!-- Obtido em: https://poly.google.com/view/6aPwDI6pvZP -->
+            <a-asset-item id="forest" src="./assets/forest/Forest.gltf"></a-asset-item>
+            <!-- Obtido em: https://poly.google.com/view/ahT2_ZxtLIq -->
+            <a-asset-item id="spruce" src="./assets/spruce/SpruceTree.gltf"></a-asset-item>
+
+            <!-- Cars -->
+
+            <!-- Obtido em: https://poly.google.com/view/bTcqWpYqeeM -->
+            <a-asset-item id="car" src="./assets/car/car_02.gltf"></a-asset-item>
+
+            <!-- Obtido em: https://poly.google.com/view/fv2QPJ3DJOY -->
+            <a-asset-item id="truck" src="./assets/truck/Jeep_1385.gltf"></a-asset-item>
+
+            <!-- Obtido em: https://poly.google.com/view/cPVFA5uTr9l -->
+            <a-asset-item id="truck1" src="./assets/truck1/truck_02.gltf"></a-asset-item>
+
+            <!-- Obtido em: https://poly.google.com/view/erAyhpZ-N2h -->
+            <a-asset-item id="police" src="./assets/police/PoliceCar_1396.gltf"></a-asset-item>
+
+            <!-- Obtido em: https://poly.google.com/view/aT_24cDaW1a -->
+            <a-asset-item id="van" src="./assets/van/1387 Van.gltf"></a-asset-item>
+
+            <!-- Obtido em: https://poly.google.com/view/bSUF7N6ZGmn -->
+            <a-asset-item id="jeep" src="./assets/jeep/1385 Jeep.gltf"></a-asset-item>
+
+
+            <!-- Images and Textures-->
+
+            <img id="sky" src="./assets/images/starmap_4k.jpg">
+            <img id="ground" src="./assets/images/ground_texture.jpg">
+            <img id="groundNormal" src="./assets/images/ground_texture_normal.jpg">
+            <video id="film" autoplay loop="true" src="./assets/alice.mp4"></video>
+        </a-assets>
+
+        <a-sky src="#sky"></a-sky>
+
+
+
+        <a-video id="film"
+            src="#film"
+            position="0 5 -7.6"
+            width="3.84" height="2.16"
+            scale="2.75 2.75 2.75"
+            roughness="0">
+        </a-video>
+
+        <a-box id="backFilm"
+            color="black"
+            position="0 5 -7.976"
+            width="3.84" height="2.16"
+            scale="2.75 2.75 0.75">
+        </a-box>
+
+        <a-cylinder id="pega1"
+            color="black"
+            height="3" radius="0.1"
+            position="-5 1.5 -8">
+        </a-cylinder>
+
+        <a-cylinder id="pega2"
+            color="black"
+            height="3" radius="0.1"
+            position="-2.5 1.5 -8">
+        </a-cylinder>
+
+        <a-cylinder id="pega3"
+            color="black"
+            height="3" radius="0.1"
+            position="0 1.5 -8">
+        </a-cylinder>
+
+        <a-cylinder id="pega4"
+            color="black"
+            height="3" radius="0.1"
+            position="2.5 1.5 -8">
+        </a-cylinder>
+
+        <a-cylinder id="pega5"
+            color="black"
+            height="3" radius="0.1"
+            position="5 1.5 -8">
+        </a-cylinder>
+
+        
+
+        <a-entity id="arvores" gltf-model="#tree"
+            position="15.964 2.240 -2.615"
+            rotation="0 130 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores1" gltf-model="#tree"
+            position="0 2.270 -15.6"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores2" gltf-model="#tree"
+            position="-14.388 2.240 -5.540"
+            rotation="0 85.305 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores3" gltf-model="#tree"
+            position="-14.787 2.240 8.979"
+            rotation="0.807 -51.719 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores4" gltf-model="#tree"
+            position="-20.310 2.240 -20.678"
+            rotation="0 -158.38 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores5" gltf-model="#tree"
+            position="19.102 2.240 -20.678"
+            rotation="0 -153.43 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores6" gltf-model="#tree"
+            position="5.027 2.240 -30.949"
+            rotation="0 -153.43 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores7" gltf-model="#tree"
+            position="-11.349 2.240 -36.391"
+            rotation="0 130.98 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores8" gltf-model="#tree"
+            position="15.241 2.240 15.181"
+            rotation="0 128.01 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores9" gltf-model="#tree"
+            position="-31.176 2.240 -4.254"
+            rotation="0 125.518 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores10" gltf-model="#tree"
+            position="-28.653 2.240 16.195"
+            rotation="0 125.518 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores10" gltf-model="#tree"
+            position="30.296 2.240 14.793"
+            rotation="0 -42.629 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores11" gltf-model="#tree"
+            position="27.108 2.240 31.776"
+            rotation="0 140.17 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores12" gltf-model="#tree"
+            position="44.590 2.240 27.5"
+            rotation="0 140.17 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores13" gltf-model="#tree"
+            position="43.339 2.240 42.875"
+            rotation="0 -33.012 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores14" gltf-model="#tree"
+            position="-30.967 2.240 40.462"
+            rotation="0 94.876 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores15" gltf-model="#tree"
+            position="-18.090 2.240 30.636"
+            rotation="0 -76.199 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores16" gltf-model="#tree"
+            position="-15.227 2.240 48.763"
+            rotation="0 -135.439 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores17" gltf-model="#tree"
+            position="4.019 2.240 48.763"
+            rotation="0 46.862 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="arvores18" gltf-model="#tree"
+            position="21.329 2.240 56.698"
+            rotation="0 155.91 0"
+            scale="8 8 8">
+        </a-entity>
+
+        <a-entity id="montanha0" gltf-model="#mountain"
+            position="-31.137 0 -35.704"
+            rotation="0 -125.72 0"
+            scale="3 3 6">
+        </a-entity>
+
+        <a-entity id="montanha1" gltf-model="#mountain"
+            position="28.155 0 -41.851"
+            rotation="0 -72.876 0"
+            scale="3 3 6">
+        </a-entity>
+
+        <a-entity id="montanha2" gltf-model="#mountain"
+            position="0.831 0 -50.736"
+            rotation="0 91.465 0"
+            scale="3 3 6">
+        </a-entity>
+
+        <a-entity id="montanha3" gltf-model="#mountain"
+            position="-17.053 0 -54.335"
+            rotation="0 -9.701 0"
+            scale="3 3 6">
+        </a-entity>
+
+        <a-entity id="montanha4" gltf-model="#mountain"
+            position="-48.748 0 -9.134"
+            rotation="0 80.059 0"
+            scale="5 5 5">
+        </a-entity>
+
+        <a-entity id="montanha5" gltf-model="#mountain"
+            position="39.336 0 -14.757"
+            rotation="0 86.799 0"
+            scale="5 5 5">
+        </a-entity>
+
+        <a-entity id="montanha6" gltf-model="#mountain"
+            position="14.213 0 -50.697"
+            rotation="0 176.5 0"
+            scale="5 5 5">
+        </a-entity>
+
+        <a-entity id="montanha7" gltf-model="#mountain"
+            position="-48.7483 0 25.289"
+            rotation="0 92.552 0"
+            scale="4 4 4">
+        </a-entity>
+
+        <a-entity id="jeep" gltf-model="#jeep"
+            position="-4 0 -0.5"
+            rotation="0 180 0"
+            scale="0.05 0.05 0.05">
+        </a-entity>
+
+        <a-entity id="car" gltf-model="#car"
+            position="0 0 0"
+            rotation="0 -90 0"
+            scale="0.01 0.01 0.01">
+        </a-entity>
+
+        <a-entity id="truck" gltf-model="#truck"
+            position="4 0.240 0"
+            rotation="0 180 0"
+            scale="0.070 0.070 0.070">
+        </a-entity>
+
+        <a-entity id="police" gltf-model="#police"
+            position="-4 0.1 8"
+            rotation="0 180 0"
+            scale="0.070 0.070 0.070">
+        </a-entity>
+
+        <a-entity id="van" gltf-model="#van"
+            position="0 0.1 8"
+            rotation="0 180 0"
+            scale="0.060 0.060 0.060">
+        </a-entity>
+
+        <a-entity id="truck1" gltf-model="#truck1"
+            position="4 0.012 8"
+            rotation="0 -90 0"
+            scale="0.010 0.010 0.010">
+        </a-entity>
+
+        <a-plane id="chao"
+            color="gray"
+            src="#ground"
+            rotation="-90 0 0" scale="120 120 120" 
+            roughness="1"
+            repeat="50 50"
+            normal-map="#groundNormal"
+            normal-scale="1 -1"
+            side="double"
+            shadow="receive: true">
+        </a-plane>
+
+        <a-entity id="ambient-light"
+            light="type: ambient;
+            color: gray;
+            intensity: 0.333">
+        </a-entity>
+
+        <a-entity id="film-light"
+            position="0 2.476 -11"
+            rotation="0 180 0"
+            light="type: spot;
+            color: #fff;
+            angle: 30;
+            intensity: 0.333">
+        </a-entity>
+
+        <a-entity camera 
+            position="10.228 5.532 22.402"
+            rotation="-19.595 15.355 0">
+        </a-entity>
+
+
+    </a-scene>
+</body>
+</html>
